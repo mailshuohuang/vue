@@ -1,0 +1,70 @@
+@import "../mixins/button";
+
+@mixin m($modifier) {
+  $selector: &;
+  $currentSelector: "";
+  @each $unit in $modifier {
+    $currentSelector: #{$currentSelector + & + '--' + $unit + ","};
+  }
+
+  @at-root {
+    #{$currentSelector} {
+      @content;
+    }
+  }
+}
+
+.el-button {
+  .white-bg &.el-button--default:not(.el-button--primary) {
+    color: #666666;
+    background-color: rgba(228,233,234,0.2);
+    border-color: #B0B9C0;
+    &.is-disabled {
+      &,
+      &:hover,
+      &:focus,
+      &:active {
+        background: rgba(228, 233, 234, 0.2);
+        border-color: rgba(176, 185, 192, .4);
+        color: rgba(102, 102, 102, .4)
+      }
+    }
+  }
+  &.is-disabled.is-plain {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      background: rgba(91,103,123,0.2);
+    }
+  }
+
+  &--text {
+    color: white;
+    &:hover {
+      color: rgba(255, 255, 255, .6)
+    }
+    .white-bg & {
+      color: #666666;
+      &:hover {
+        color: rgba(102, 102, 102, .6)
+      }
+    }
+  }
+
+  @include m(primary) {
+    @include button-variant($--button-primary-font-color, $--button-primary-background-color, $--button-primary-border-color);
+  }
+  @include m(success) {
+    @include button-variant($--button-success-font-color, $--button-success-background-color, $--button-success-border-color);
+  }
+  @include m(warning) {
+    @include button-variant($--button-warning-font-color, $--button-warning-background-color, $--button-warning-border-color);
+  }
+  @include m(danger) {
+    @include button-variant($--button-danger-font-color, $--button-danger-background-color, $--button-danger-border-color);
+  }
+  @include m(info) {
+    @include button-variant($--button-info-font-color, $--button-info-background-color, $--button-info-border-color);
+  }
+}

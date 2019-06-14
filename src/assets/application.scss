@@ -1,1 +1,8 @@
-@import "theme/element_variables";
+@import "base/body";
+@import "theme/element-variables";
+@import "theme/bootstrap-component";
+@import "theme/bootstrap-variables";
+
+//component
+@import "component/menu";
+@import "component/button";

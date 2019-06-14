@@ -1,8 +1,10 @@
 const path = require('path')
 const svgFilePath = path.join(__dirname, 'src/assets/icons/')
+const nodeModulePath = path.join(__dirname, 'node_modules/')
 const remoteServer = 'http://192.168.251.211:8080'
 
 module.exports = {
+  baseUrl: './',
   assetsDir: 'assets',
   devServer: {
     proxy: {
@@ -38,6 +40,7 @@ module.exports = {
     config.module.rule('svg').exclude.add(svgFilePath)
 
     config.resolve.alias.set('@icon', svgFilePath)
+    config.resolve.alias.set('node_modules', nodeModulePath)
 
     config.resolve.symlinks(false)
   },

@@ -1,0 +1,142 @@
+@import "~element-ui/packages/theme-chalk/src/reset";
+@import "~element-ui/packages/theme-chalk/src/index";
+
+
+/* 改变主题色变量 */
+/* Color
+-------------------------- */
+//$--color-primary: #67C13A;
+//$--color-white: #FFFFFF;
+//$--color-black: #222;
+//$--color-success: #67C13A;
+//$--color-warning: #FF8B3C;
+//$--color-danger: #DF3B3B;
+//$--color-info: #1FA3FF;
+//$--color-text-primary: #ffffff;
+//$--color-text-regular: #99A9C1;
+//$--color-text-placeholder: #858C98;
+
+/* Background Color Base
+-------------------------- */
+$--background-color-base: rgba(228, 233, 234,0.2);
+
+/* Border
+-------------------------- */
+$--border-color-base: #657692;
+$--border-color-light: #5F6D81;
+$--border-color-lighter: #7c8ca5;
+
+/* Font
+------------------------- */
+$--font-size-base: 14px;
+
+/* Button
+------------------------- */
+$--button-medium-font-size: 14px;
+$--button-disabled-background-color: #263141;
+$--button-disabled-font-color: rgba(255,255,255,.2);
+$--button-default-background-color: rgba(91,103,123,0.2);
+$--button-primary-border-color: $--color-primary;
+$--button-primary-font-color: $--color-white;
+$--button-primary-background-color: $--color-primary;
+$--button-success-border-color: $--color-success;
+$--button-success-font-color: $--color-white;
+$--button-success-background-color: $--color-success;
+$--button-warning-border-color: $--color-warning;
+$--button-warning-font-color: $--color-white;
+$--button-warning-background-color: $--color-warning;
+$--button-danger-border-color: $--color-danger;
+$--button-danger-font-color: $--color-white;
+$--button-danger-background-color: $--color-danger;
+$--button-info-border-color: $--color-info;
+$--button-info-font-color: $--color-white;
+$--button-info-background-color: $--color-info;
+$--button-hover-tint-percent: 20%;
+$--button-active-shade-percent: 10%;
+
+/* Input
+------------------------- */
+$--input-font-color: $--color-white;
+$--input-background-color: rgba(91,103,123,0.2);
+$--input-focus-border: #67c13a;
+$--input-icon-color: $--color-white;
+$--input-disabled-fill: rgba(101,118,146,0.4);
+$--input-icon-color: #657692;
+
+/* Badge
+------------------------- */
+$--badge-size: 15px;
+$--badge-radius: 8px;
+$--badge-padding: 5px;
+
+/* Popper
+------------------------- */
+$--popover-border-color: transparent;
+$--popover-background-color: #F1F3F3;
+
+/* Switch
+------------------------- */
+$--switch-off-color: #B0B9C0;
+
+/* Select
+------------------------- */
+$--select-option-color: #666666;
+$--select-option-hover-background: rgba(65,75,92,.1);
+
+/* Radio
+-------------------------- */
+$--radio-input-height: $--font-size-base;
+$--radio-input-width: $--font-size-base;
+$--radio-input-background-color: transparent;
+$--radio-disabled-input-border-color: $--border-color-base;
+$--radio-disabled-checked-input-border-color: $--border-color-base;
+$--radio-disabled-input-fill: rgba(100,116,144,0.4);
+$--radio-disabled-checked-input-fill: rgba(100,116,144,0.4);
+
+/* Checkbox
+-------------------------- */
+$--checkbox-input-height: $--font-size-base;
+$--checkbox-input-width: $--font-size-base;
+$--checkbox-font-size: $--font-size-base;
+$--checkbox-background-color: transparent;
+$--checkbox-disabled-input-border-color: $--border-color-base;
+$--checkbox-disabled-checked-input-border-color: $--border-color-base;
+$--checkbox-disabled-input-fill: rgba(100,116,144,0.4);
+$--checkbox-disabled-checked-input-fill: rgba(100,116,144,0.4);
+
+/* Dialog
+-------------------------- */
+$--dialog-background-color: #E6EBEC;
+$--dialog-padding-primary: 16px;
+$--dialog-title-font-size: 16px;
+$--dialog-content-font-size: 12px;
+
+/* Notification
+-------------------------- */
+$--notification-title-color: #222;
+$--notification-content-color: #999;
+
+/* Table
+------------------------- */
+$--table-font-color: $--color-white;
+$--table-header-color: $--color-white;
+$--table-header-font-color: $--color-white;
+$--table-header-background-color: rgba(207,217,232,0.2);
+$--table-border-color: #5F6D81;
+$--table-current-row-background-color: rgba(65, 75, 92, .3);
+$--table-row-hover-background-color: rgba(65, 75, 92, .3);
+
+/* Tooltip
+------------------------- */
+$--tooltip-border-color: transparent;
+$--tooltip-fill: rgba(21,22,24,.95);
+$--tooltip-color: $--color-white;
+
+/* Dropdown
+------------------------- */
+$--dropdown-menuItem-hover-fill: rgba(65, 75, 92, .1);
+$--dropdown-menuItem-hover-color: #222;
+
+/* message-box
+------------------------- */
+$--messagebox-title-color: $--color-black;
